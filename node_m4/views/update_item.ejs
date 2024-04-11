@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+</head>
+<body>
+<h1> UPDATE ITEM</h1>
+<form action="/items/update" method="POST">
+
+    <input id="id" type="hidden" name="id" value="<%= item.id%>">
+
+    <label for="id_nom">Nom</label>
+    <input id="id_nom" type="text" name="nom" value="<%= item.nom%>">
+
+    <label for="rol">Rol</label>
+    <input id="rol" type="text" name="rol" value="<%= item.rol%>" >
+
+
+    <input type="submit" value="update">
+</form>
+</body>
+</html>
